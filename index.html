@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Technical Documentation </title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<div class="main-body">
+            
+<nav id="navbar">
+  <header>JS Technical Documentation</header>
+  
+    <a href="#introduction" class="nav-link">Introduction</a>
+    <a href="#javascript" class="nav-link">Javascript</a>
+    <a href="#variables" class="nav-link">Variables</a>
+    <a href="#scope" class="nav-link">Scope</a>
+    <a href="#function" class="nav-link">Function</a>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="introduction">
+    <header>Introduction</header>
+      <p>JavaScript Essential Training, by Simon Allardice on Lynda.com, provides an easy-to-understand video training series on JavaScript. The course begins at ground zero and proceeds through basic JavaScript programming concepts and techniques.</p>
+      <p>These pages on my site are notes from the course. Most of the code examples come the course, but I usually modify the styles and add my own comments and explanations about what's going on. I plan to continue adding and expanding my notes here as I advance with my learning of JavaScript.</p>
+    <code>
+var carName = "Volvo";
+document.getElementById("demo").innerHTML = carName;
+    </code>
+    
+  </section>
+  <section class="main-section" id="javascript">
+    <header>JavaScript</header>
+      <p>JavaScript is a programming language that runs in your web browser. It's considered one of the main building blocks of web pages, complementing CSS and HTML, and provides the interactive elements of a web page.</p>
+      <p>When you see page elements expand or collapse, slide around, change appearance on mouseover or click, appear or disappear, change color, and so on, it's JavaScript that enables this interactivity.
+</p>
+    <code>
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+    </code>
+    <ul>
+      <li>Variables</li>
+      <li>Functions</li>
+      <li>Control Flow</li>
+      <li>Promises</li>
+      <li>The Strange Parts</li>  
+    </ul>
+  </section>
+  <section class="main-section" id="variables">
+    <header>Variables</header>
+      <p>JavaScript doesn't interact with your web server. All the action happens right in your browser, because your browser includes an engine to run and interpret JavaScript code.</p>
+      <p>When you run this JavaScript statement, an alert pops up in your browser that says, "Hello World."</p>
+    <code>
+var person = "John Doe",
+carName = "Volvo",
+price = 200;
+document.getElementById("demo").innerHTML = carName;
+    </code>
+  </section>
+  <section class="main-section" id="scope">
+    <header>Scope</header>
+     <p>This reference will pull in the script file (assuming it's in the same folder as your webpage and called scripts.js). </p>
+     <p>You can insert the reference to your JavaScript file anywhere on the page, but the script will load in sequence where you insert it.</p>
+    <code>var x = 5 + 2 + 3;
+      document.getElementById("demo").innerHTML = x;
+    </code>
+  </section>
+  <section class="main-section" id="function">
+    <header>Function</header>
+       <p>When you integrate JavaScript in a web page, you enclose it in script tags.</p>
+       <p>However, it's usually best not to mix your scripts with the HTML of your webpage.</p>
+       <code>
+var price1 = 5;
+var price2 = 6;
+var total = price1 + price2;
+document.getElementById("demo").innerHTML =
+"The total is: " + total;
+      </code>
+  </section>
+</main>
+  </div>
+  
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
